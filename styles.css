@@ -382,6 +382,7 @@ QUALITY
     border-radius: 500px;
     font-weight: 700;
     transition: 500ms ease;
+    cursor: not-allowed;
 }
 
 .quality__button:hover {
@@ -575,6 +576,7 @@ VALUES
     border-radius: 500px;
     font-weight: 700;
     transition: 500ms ease;
+    cursor: not-allowed;
 }
 
 .values__button:hover {
@@ -723,6 +725,7 @@ PRICE
     padding: 16px 40px;
     border-radius: 500px;
     font-weight: 700;
+    cursor: not-allowed;
 }
 
 .price__button:hover {
@@ -799,6 +802,7 @@ PRICE
     padding: 16px 40px;
     border-radius: 500px;
     font-weight: 700;
+    cursor: not-allowed;
 }
 
 .price__button2:hover {
@@ -890,6 +894,7 @@ PRICE
     padding: 16px 40px;
     border-radius: 500px;
     font-weight: 700;
+    cursor: not-allowed;
 }
 
 .price__button3:hover {
@@ -1076,3 +1081,86 @@ QUESTIONS
     margin-bottom: 40px;
 }
 
+/* 
+
+BANNER
+
+*/
+
+.banner__container {
+    padding: 96px 0;
+}
+
+.banner__row {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+}
+
+.banner__line {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6451ff;
+    padding: 80px;
+    border-radius: 8px;
+}
+
+.banner__title--wrapper {
+    width: 50%;
+}
+
+.banner__title {
+    font-size: 30px;
+    color: #fff;
+}
+
+.banner__desc {
+    margin: 0 auto;
+    display: flex;
+}
+
+.banner__button--wrapper {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.banner__button1 {
+    background-color: rgb(247 91 91);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border: 0px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    margin-right: 32px;
+    transition: 500ms ease;
+    cursor: not-allowed;
+}
+
+.banner__button1:hover {
+    background: rgb(202, 73, 73);
+}
+
+.banner__button2 {
+    background-color: #6451ff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid rgb(160 174 192);
+    padding: 16px 40px;
+    border-radius: 500px;
+    margin-right: 32px;
+    transition: 500ms ease;
+    cursor: not-allowed;
+}
+
+.banner__button2:hover {
+    background: #fff;
+    color: #6451ff;
+}
