@@ -6,6 +6,7 @@
     <title>Fes Project</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </head>
   <body>
     <main>
@@ -22,30 +23,57 @@
             </a>
             <ul class="nav__links">
               <li>
-                <a class="nav__link nav__underline" href="">About</a>
+                <a class="nav__link nav__underline" href="#">About</a>
               </li>
               <li>
-                <a class="nav__link nav__underline" href="">Blog</a>
+                <a class="nav__link nav__underline" href="#">Blog</a>
               </li>
               <li>
-                <a class="nav__link nav__underline" href="">Pricing</a>
+                <a class="nav__link nav__underline" href="#price">Pricing</a>
               </li>
               <li>
-                <a class="nav__link nav__underline" href="">Contact Us</a>
+                <a class="nav__link nav__underline" href="#footer">Contact Us</a>
               </li>
               <div class="login">
                 <li>
-                  <a class="nav__link nav__underline nav__link--login" href=""
+                  <a class="nav__link nav__underline nav__link--login" href="#"
                     >Login</a
                   >
                 </li>
               </div>
               <li>
-                <a class="nav__link nav__link--primary" href="">Sign Up</a>
+                <a class="nav__link nav__link--primary" href="#">Sign Up</a>
               </li>
             </ul>
             
-            
+            <button class="btn__menu" onclick="openMenu()">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="btn__backdrop">
+              <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+              </button>
+              <ul class="menu__links">
+                <li class="menu__list">
+                  <a href="#" class="menu__link no__cursor" onclick="closeMenu()">About</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#" class="menu__link no__cursor" onclick="closeMenu()">Blog</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#" class="menu__link no__cursor" onclick="closeMenu()">Pricing</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#" class="menu__link no__cursor" onclick="closeMenu()">Contact Us</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#" class="menu__link no__cursor" onclick="closeMenu()">Login</a>
+                </li>
+                <li class="menu__list">
+                  <a href="#" class="menu__link no__cursor" onclick="closeMenu()">Sign Up</a>
+                </li>
+              </ul>
+            </div>
 
 
           </div>
@@ -226,7 +254,7 @@
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.
               </p>
-              <a class="quality__button--wrapper" href="">
+              <a class="quality__button--wrapper" href="#">
                 <button class="quality__button button__hover">
                   Learn More
                 </button>
@@ -357,7 +385,7 @@
                   </div>
                 </div>
                   </div>
-                  <a class="values__button--wrapper" href="">
+                  <a class="values__button--wrapper" href="#">
                     <button class="values__button button__hover">Learn More</button>
                   </a>
                 </div>
@@ -394,7 +422,7 @@
                   <span class="price__middle--desc">Basic Assistance</span>
                 </div>
                 <div class="price__list--footer">
-                  <a href=""><button class="price__button button__hover">BUY NOW</button></a>
+                  <a href="#"><button class="price__button button__hover">BUY NOW</button></a>
                 </div>
               </div>
               <div class="price__list2">
@@ -412,7 +440,7 @@
                   <span class="price__middle--desc2">Priority Assistance</span>
                 </div>
                 <div class="price__list--footer">
-                  <a href=""><button class="price__button2 button__hover">BUY NOW</button></a>
+                  <a href="#"><button class="price__button2 button__hover">BUY NOW</button></a>
                 </div>
               </div>
               <div class="price__list3">
@@ -430,7 +458,7 @@
                   <span class="price__middle--desc">Personal Assistance</span>
                 </div>
                 <div class="price__list--footer3">
-                  <a href=""><button class="price__button3 button__hover">BUY NOW</button></a>
+                  <a href="#"><button class="price__button3 button__hover">BUY NOW</button></a>
                 </div>
               </div>
             </div>
@@ -620,45 +648,46 @@
         </div>
       </section>
     </main>
-
+<!---------------------------------------------------------------------------------------------------------------------------------------------------->
+    <section id="footer">
     <footer>
       <div class="footer__container">
         <div class="footer__row">
           <div class="footer__desc">
             <div class="footer__links">
               <h5 class="footer__links--title">MAIN</h5>
-              <a href="" class="footer__link">Blog</a>
-              <a href="" class="footer__link">FAQS</a>
-              <a href="" class="footer__link">Support</a>
-              <a href="" class="footer__link">About Us</a>
+              <a class="footer__link">Blog</a>
+              <a class="footer__link">FAQS</a>
+              <a class="footer__link">Support</a>
+              <a class="footer__link">About Us</a>
             </div>
             <div class="footer__links">
               <h5 class="footer__links--title">PRODUCT</h5>
-              <a href="" class="footer__link">Log In</a>
-              <a href="" class="footer__link">Personal</a>
-              <a href="" class="footer__link">Business</a>
-              <a href="" class="footer__link">Team</a>
+              <a class="footer__link">Log In</a>
+              <a class="footer__link">Personal</a>
+              <a class="footer__link">Business</a>
+              <a class="footer__link">Team</a>
             </div>
             <div class="footer__links">
               <h5 class="footer__links--title">PRESS</h5>
-              <a href="" class="footer__link">Logos</a>
-              <a href="" class="footer__link">Events</a>
-              <a href="" class="footer__link">Stories</a>
-              <a href="" class="footer__link">Office</a>
+              <a class="footer__link">Logos</a>
+              <a class="footer__link">Events</a>
+              <a class="footer__link">Stories</a>
+              <a class="footer__link">Office</a>
             </div>
             <div class="footer__links">
               <h5 class="footer__links--title">TEAM</h5>
-              <a href="" class="footer__link">Careers</a>
-              <a href="" class="footer__link">Founders</a>
-              <a href="" class="footer__link">Culture</a>
-              <a href="" class="footer__link">Onboarding</a>
+              <a class="footer__link">Careers</a>
+              <a class="footer__link">Founders</a>
+              <a class="footer__link">Culture</a>
+              <a class="footer__link">Onboarding</a>
             </div>
             <div class="footer__links">
               <h5 class="footer__links--title">LEGAL</h5>
-              <a href="" class="footer__link">GDPR</a>
-              <a href="" class="footer__link">Privacy Policy</a>
-              <a href="" class="footer__link">Terms of Service</a>
-              <a href="" class="footer__link">Disclaimer</a>
+              <a class="footer__link">GDPR</a>
+              <a class="footer__link">Privacy Policy</a>
+              <a class="footer__link">Terms of Service</a>
+              <a class="footer__link">Disclaimer</a>
             </div>
           </div>
           <div class="footer__divide"></div>
@@ -690,7 +719,7 @@
           </div>
         </div>
       </div>
-
     </footer>
+  </section>
   </body>
 </html>

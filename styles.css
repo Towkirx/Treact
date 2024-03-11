@@ -20,6 +20,20 @@ main {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-track {
+    background: #e6e3e3;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
 
 a {
     text-decoration: none;
@@ -106,6 +120,80 @@ img {
         opacity: 1;
         transform: translateX(0);
     }
+}
+
+.btn__menu {
+    background-color: transparent;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    color: #000000;
+    display: none;
+    cursor: pointer;
+}
+
+.no__cursor {
+    cursor: not-allowed;
+}
+
+.menu--open {
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+.btn__backdrop {
+    position: absolute;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 1px 30px;
+    padding: 32px;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d8d9db;
+    border-radius: 10px;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu--open .btn__backdrop {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.menu__list {
+    margin: 10px 0;
+    padding-bottom: 8px;
+}
+
+.menu__link {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    transition: all 500ms ease;
+}
+
+.menu__link:hover {
+    color: rgb(65, 12, 172);
+}
+
+.btn__menu--close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    color: #000000;
 }
 
 /*
@@ -1363,10 +1451,10 @@ SMALL PHONES, TABLETS, LARGE SMARTPHONES
     margin-top: -16px;
     }
 
-    .container__row {
-        display: flex;
-        justify-content: center;
+    .btn__menu {
+        display: block;
     }
+
 
     .nav__links {
         display: none;
@@ -1621,6 +1709,10 @@ SMALL PHONES, TABLETS, LARGE SMARTPHONES
     margin-bottom: 60px;
     margin-right: 30px;
     }
+
+    .price__subtitle {
+        text-align: center;
+    }
     
     .price__wrapper {
     max-width: 360px;
@@ -1751,3 +1843,12 @@ SMALL PHONES, TABLETS, LARGE SMARTPHONES
     }
 }
 
+
+@media (max-width: 468px) {
+    .feature__subtitle {
+        text-align: center;
+    }
+    .questions__subtitle {
+        text-align: center;
+    }
+}
